@@ -6,15 +6,17 @@ class TestSwansonIpsum < Test::Unit::TestCase
   end
 
   def test_sentence
-    assert_match /1\+|[ a-z]+/i, Faker::SwansonIpsum.sentence
+    assert_match /1\+|[ a-z]+\./i, Faker::SwansonIpsum.sentence
   end
 
   def test_paragraphs
     assert_match /1\+|[ a-z]+/i, Faker::SwansonIpsum.paragraphs.join(" ")
+    assert_equal 3, Faker::SwansonIpsum.paragraphs.uniq.length
   end
 
   def test_sentences
     assert_match /1\+|[ a-z]+/i, Faker::SwansonIpsum.sentences.join(" ")
+    assert_equal 3, Faker::SwansonIpsum.sentences.uniq.length
   end
 
   def test_words

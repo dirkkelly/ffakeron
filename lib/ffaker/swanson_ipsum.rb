@@ -9,10 +9,16 @@ module Faker
     end
 
     def sentence
-      punctuation = SWANSON_PUNCTUATION.rand
       quote = SWANSON_QUOTES.rand
+      "#{quote}."
+    end
 
-      "#{quote}#{punctuation}"
+    def sentences(num = 3)
+      (1..num+10).map { sentence }.uniq[1..num]
+    end
+
+    def paragraphs(num = 3)
+      (1..num+10).map { paragraph }.uniq[1..num]
     end
 
     def words(num = 3)
