@@ -14,7 +14,7 @@ module Faker
 
     SWANSON_WORDS = k [
       "Swanson", "Ron", "bacon", "meat", "government", "tax", "profits", "business",
-      "parks" "alcohol", "breakfast", "ribs", "ex-wife", "food", "cloven", "hooves",
+      "parks", "alcohol", "breakfast", "ribs", "ex-wife", "food", "cloven", "hooves",
       "woodwork", "steel", "toolbox", "hammer", "Pawnee", "Tammy", "Knope", "Humpsville",
       "wreathes", "torches", "horrible", "department", "manager", "greedy", "piglet",
       "mustache", "scam", "philosophy", "respect", "horrifying", "hamburger", "ketchup",
