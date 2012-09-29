@@ -1,6 +1,6 @@
 # Fakeron
 
-Adds the module Faker::SwansonIpsum, giving you endless hours of fun with Ron Swanson Quotes
+Adds the module Faker::SwansonIpsum, Faker::SwansonQuote giving you endless hours of fun with Ron Swanson idioms.
 
 ## Why?
 
@@ -24,17 +24,28 @@ Or install it yourself as:
 
 ## Usage
 
+### Faker::SwansonIpsum
+
 As you would any other Ipsum generator you're able to get a few basic strings from Faker::SwansonIpsum, notably.
 
-    Faker::SwansonIpsum.word # single word
-    Faker::SwansonIpsum.sentence # an actual sentence quote
-    Faker::SwansonIpsum.paragraph # a few sentences, strung together
+    Faker::SwansonIpsum.word # random Swanson style word
+    Faker::SwansonIpsum.words(count) # array of random words
 
-Along with this you can generate multiple of each, with the parameter controlling the count
+    Faker::SwansonIpsum.sentence # random collection of words as a sentence
+    Faker::SwansonIpsum.sentences(count) # array of random sentences
 
-    Faker::SwansonIpsum.words(count) # an array of words
-    Faker::SwansonIpsum.sentences(count) # an array of sentences
-    Faker::SwansonIpsum.paragraphs(count) # an array of paragraphs
+    Faker::SwansonIpsum.paragraph # random sentences, strung together
+    Faker::SwansonIpsum.paragraphs(count) # array of random paragraphs
+
+### Faker::SwansonQuote
+
+Instead of a pattern of gibberish Ipsum, you can generate quotes from Swanson
+
+    Faker::SwansonQuote.sentence # A single quote
+    Faker::SwansonQuote.sentences(count) # array of quotes
+
+    Faker::SwansonQuote.paragraph # A few quotes strung together
+    Faker::SwansonQuote.paragraphs(count) # array of paragraphs of quotes
 
 ## Contributing
 
