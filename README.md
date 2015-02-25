@@ -59,5 +59,5 @@ Instead of a pattern of gibberish Ipsum, you can generate quotes from Swanson
 
 ```
 gem build ffakeron.gemspec
-gem publish ffakeron-X.X.X.gem
+gem push ffakeron-X.X.X.gem
 ```
