@@ -1,6 +1,6 @@
 require 'helper'
 
-class TestSwansonIpsum < Test::Unit::TestCase
+class TestSwansonIpsum < Minitest::Test
   def test_paragraph
     assert_match /1\+|[ a-z]+/i, Faker::SwansonIpsum.paragraph
   end

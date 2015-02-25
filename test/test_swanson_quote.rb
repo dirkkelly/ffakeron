@@ -1,6 +1,6 @@
 require 'helper'
 
-class TestSwansonQuote < Test::Unit::TestCase
+class TestSwansonQuote < Minitest::Test
   def test_sentence
     assert_match /1\+|[ a-z]+\./i, Faker::SwansonQuote.sentence
   end
