@@ -4,7 +4,7 @@ module Faker
     extend self
 
     def sentence
-      SWANSON_QUOTES.rand
+      SWANSON_QUOTES.sample
     end
 
     def sentences(num = 3)

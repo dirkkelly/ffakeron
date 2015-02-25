@@ -5,7 +5,7 @@ module Faker
     extend self
 
     def word
-      SWANSON_WORDS.rand
+      SWANSON_WORDS.sample
     end
 
     def words(num = 3)
