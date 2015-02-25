@@ -54,3 +54,10 @@ Instead of a pattern of gibberish Ipsum, you can generate quotes from Swanson
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Publishing
+
+```
+gem build ffakeron.gemspec
+gem publish ffakeron-X.X.X.gem
+```
